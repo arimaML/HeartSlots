@@ -1,0 +1,31 @@
+Mods: {
+	HeartSlots: {
+		Items: {
+			CrystalHeart: {
+				DisplayName: Кристальное Сердце
+				Tooltip: Кристалл рассыпается, отдав свой свет.
+			}
+
+			OminousTalisman: {
+				DisplayName: Зловещий Талисман
+				Tooltip: Тяжёл, как разбитый алтарь.
+			}
+
+			MechanicalExpander: {
+				DisplayName: Механический Расширитель
+				Tooltip: Шестерни в шестернях, вращение без конца.
+			}
+
+			CelestialSynthesizer: {
+				DisplayName: Небесный Синтезатор
+				Tooltip: Собран из света мёртвых богов.
+			}
+		}
+
+		Misc: {
+			SlotUnlocked: Открыт новый слот аксессуаров.
+			AlreadyUnlocked: Этот слот уже открыт.
+			WillUnlock: Навсегда открывает +1 слот аксессуаров.
+		}
+	}
+}

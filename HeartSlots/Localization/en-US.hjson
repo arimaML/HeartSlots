@@ -1,0 +1,31 @@
+Mods: {
+	HeartSlots: {
+		Items: {
+			CrystalHeart: {
+				DisplayName: Crystal Heart
+				Tooltip: The crystal crumbles once its light is spent.
+			}
+
+			OminousTalisman: {
+				DisplayName: Ominous Talisman
+				Tooltip: Heavy with the weight of a broken altar.
+			}
+
+			MechanicalExpander: {
+				DisplayName: Mechanical Expander
+				Tooltip: Gears within gears, turning without end.
+			}
+
+			CelestialSynthesizer: {
+				DisplayName: Celestial Synthesizer
+				Tooltip: Fashioned from the light of dead gods.
+			}
+		}
+
+		Misc: {
+			SlotUnlocked: A new accessory slot opens.
+			AlreadyUnlocked: This slot is already open.
+			WillUnlock: Opens one extra accessory slot, permanently.
+		}
+	}
+}

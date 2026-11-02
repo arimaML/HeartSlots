@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<!--
+		Build requirements: .NET 8 SDK, plus tModLoader installed.
+
+		Where the tModLoader build targets come from, in order:
+
+		1. A sibling ModSources\tModLoader.targets - used when this folder sits inside
+		     Documents\My Games\Terraria\tModLoader\ModSources\
+		2. One of the auto-detected Steam install locations below.
+		3. Your own path, passed explicitly:
+		     dotnet build -p:SteamTMLPath="C:\path\to\tModLoader\"
+		   (keep the trailing backslash)
+
+		The mod's internal name is taken from the project folder name,
+		so this folder must stay named "HeartSlots".
+	-->
+
+	<PropertyGroup>
+		<SteamTMLPath Condition="'$(SteamTMLPath)' == '' and Exists('D:\Program Files (x86)\Steam\steamapps\common\tModLoader\tMLMod.targets')">D:\Program Files (x86)\Steam\steamapps\common\tModLoader\</SteamTMLPath>
+		<SteamTMLPath Condition="'$(SteamTMLPath)' == '' and Exists('C:\Program Files (x86)\Steam\steamapps\common\tModLoader\tMLMod.targets')">C:\Program Files (x86)\Steam\steamapps\common\tModLoader\</SteamTMLPath>
+		<SteamTMLPath Condition="'$(SteamTMLPath)' == '' and Exists('C:\Program Files\Steam\steamapps\common\tModLoader\tMLMod.targets')">C:\Program Files\Steam\steamapps\common\tModLoader\</SteamTMLPath>
+
+		<TmlTargets Condition="'$(TmlTargets)' == '' and Exists('$(MSBuildThisFileDirectory)..\tModLoader.targets')">$(MSBuildThisFileDirectory)..\tModLoader.targets</TmlTargets>
+		<TmlTargets Condition="'$(TmlTargets)' == ''">$(SteamTMLPath)tMLMod.targets</TmlTargets>
+	</PropertyGroup>
+
+	<Import Project="$(TmlTargets)" />
+
+	<PropertyGroup>
+		<AssemblyName>HeartSlots</AssemblyName>
+		<RootNamespace>HeartSlots</RootNamespace>
+		<Nullable>disable</Nullable>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	</PropertyGroup>
+
+</Project>

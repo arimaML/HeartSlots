@@ -1,0 +1,27 @@
+HeartSlots — четыре предмета, каждый навсегда открывает +1 слот аксессуаров.
+
+Кристальное Сердце       — начало игры, исследование пещер
+Зловещий Талисман        — после Исследователя мира и Подземелья
+Механический Расширитель — хардмод, механические боссы
+Небесный Синтезатор      — после Лунного Лорда
+
+Все крафты — на Демоническом или Багряном алтаре.
+
+Каждый предмет одноразовый: слот открывается навсегда и сохраняется вместе с
+персонажем. Повторное использование ничего не даст, а предмет не потратится.
+Слоты независимы — любой можно открыть первым.
+
+--- English ---
+
+HeartSlots adds four craftable relics. Each one permanently unlocks one extra
+accessory slot for that character, then is consumed.
+
+Crystal Heart         — early game, cave exploration
+Ominous Talisman      — after the world evil boss and the Dungeon
+Mechanical Expander   — hardmode, mechanical bosses
+Celestial Synthesizer — after the Moon Lord
+
+All recipes are crafted at a Demon or Crimson Altar.
+
+Unlocks are permanent and saved with the character. Using the same relic twice
+does nothing and does not consume it. The four slots are independent.
